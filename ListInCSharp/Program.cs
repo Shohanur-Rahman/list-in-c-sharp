@@ -8,24 +8,24 @@ namespace ListInCSharp
     {
         static void Main(string[] args)
         {
-            int x = 5;
+            List<Student> students= new List<Student>();
 
-            var student = new Student()
+            for (int i = 0; i < 5; i++)
             {
-                Id= x,
-                Name = "Shakib",
-                Program ="CSE",
-                BloodGroup = "A+",
-                Mobile = "0175XXXXX",
-                Course = new Course()
+                Student student = new Student()
                 {
-                    Id = 1,
-                    Name = "Bangla"
-                }
-            };
+                    Id = Convert.ToInt32(Console.ReadLine()),
+                    Name = Console.ReadLine()
+                };
 
-            Console.WriteLine($"Name: {student.Name} \nID: {student.Id} \nProgram: " +
-                $"{student.Program} \nCourse: {student.Course.Name}");
+                students.Add(student);
+            }
+
+            Console.WriteLine("ID \t Name \t");
+            foreach (Student student in students)
+            {
+                Console.WriteLine($"{student.Id} \t {student.Name} \t");
+            }
 
         }
     }
@@ -37,13 +37,5 @@ namespace ListInCSharp
         public string Mobile { get; set; }
         public string BloodGroup { get; set; }
         public string Program { get; set; }
-        public Course Course { get; set; }
-
-    }
-
-    class Course
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
     }
 }
