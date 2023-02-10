@@ -8,21 +8,42 @@ namespace ListInCSharp
     {
         static void Main(string[] args)
         {
-            List<string> names = new List<string>()
+            int x = 5;
+
+            var student = new Student()
             {
-                "Rafiq Ahmed",
-                "Riad",
-                "Tamim",
-                "Rafiq Islam"
+                Id= x,
+                Name = "Shakib",
+                Program ="CSE",
+                BloodGroup = "A+",
+                Mobile = "0175XXXXX",
+                Course = new Course()
+                {
+                    Id = 1,
+                    Name = "Bangla"
+                }
             };
 
-            var rafiq = names.Where(x => x.Contains("Rafiq"));
-
-            foreach(var name in rafiq)
-            {
-                Console.WriteLine(name);
-            }
+            Console.WriteLine($"Name: {student.Name} \nID: {student.Id} \nProgram: " +
+                $"{student.Program} \nCourse: {student.Course.Name}");
 
         }
+    }
+
+    class Student
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Mobile { get; set; }
+        public string BloodGroup { get; set; }
+        public string Program { get; set; }
+        public Course Course { get; set; }
+
+    }
+
+    class Course
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
