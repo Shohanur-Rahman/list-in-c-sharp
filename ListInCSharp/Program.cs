@@ -8,10 +8,7 @@ namespace ListInCSharp
     {
         static void Main(string[] args)
         {
-            Student student = new Student()
-            {
-                Name = "Shakib"
-            };
+            
         }
     }
 
