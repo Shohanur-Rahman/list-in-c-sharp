@@ -6,3 +6,13 @@
 /ListInCSharp/.vs/ListInCSharp
 /ListInCSharp/obj
 /ListInCSharp/bin/Debug/netcoreapp3.1
+/ListInCSharp/.vs/ProjectEvaluation
+/SimpleBanking/bin/Debug/netcoreapp3.1
+/SimpleBanking/obj
+/MyConditionProject/.vs
+/MyConditionProject/bin/Debug/netcoreapp3.1
+/MyConditionProject/obj
+/MyWebApp/.vs/MyWebApp
+/MyWebApp/bin/Debug/net6.0
+/MyWebApp/obj
+*.user
