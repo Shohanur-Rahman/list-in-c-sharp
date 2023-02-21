@@ -15,40 +15,8 @@ namespace MyWebApp.Controllers
 
         public IActionResult Index()
         {
-
-            List<Student> students = new List<Student>();
-
-            var studnet = new Student()
-            {
-                Id = 1,
-                FirstName = "Tamim",
-                LastName = "Iqbal",
-                Mobile = "01750519157",
-                Email = "tamim@gmail.com"
-            };
-            students.Add(studnet);
-
-            var studnet2 = new Student()
-            {
-                Id = 2,
-                FirstName = "Shakib",
-                LastName = "Al Hasan",
-                Mobile = "01750519157",
-                Email = "shakib@gmail.com"
-            };
-            students.Add(studnet2);
-
-            var studnet3 = new Student()
-            {
-                Id = 3,
-                FirstName = "Mushfiqur",
-                LastName = "Rahim",
-                Mobile = "01750519157",
-                Email = "mushfiq@gmail.com"
-            };
-            students.Add(studnet3);
-
-            return View(students);
+            Student student = new Student();
+            return View();
         }
 
         public IActionResult Privacy()
