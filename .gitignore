@@ -16,3 +16,4 @@
 /MyWebApp/bin/Debug/net6.0
 /MyWebApp/obj
 *.user
+/MyWebApp/.vs/ProjectEvaluation
